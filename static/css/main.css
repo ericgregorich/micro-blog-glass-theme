@@ -16,7 +16,7 @@
   --blockquote: #f8eec4;
   --blockquote-border: #d6a32e;
   --blockquote-text: #2a2a2b;
-  --shadow-color: #e3e3e3;
+  --divider-color: #e3e3e3;
 }
 
 [data-theme='light'] {
@@ -27,18 +27,18 @@
   --blockquote: #f8eec4;
   --blockquote-border: #d6a32e;
   --blockquote-text: #2a2a2b;
-  --shadow-color: #e3e3e3;
+  --divider-color: #e3e3e3;
 }
 
 [data-theme='dark'] {
   --body-background-color: #2a2a2b;
-  --body-text-color: #FFFFFF;
+  --body-text-color: #ffffff;
   --body-accent-color: #1184ab;
   --hover-color: #d58400;
   --blockquote: #f8eec4;
   --blockquote-border: #d6a32e;
   --blockquote-text: #2a2a2b;
-  --shadow-color: #e3e3e3;
+  --divider-color: #565555;
 }
 
 /** Basic styling */
@@ -47,8 +47,8 @@ body {
   font-size: var(--font-size-normal);
   color: var(--body-text-color);
   line-height: 1.4;
+  margin-top: 0px;
   background-color: var(--body-background-color);
-  margin-top: 30px;
 }
 
 h1 {
@@ -68,8 +68,8 @@ h3 {
 }
 
 .post-meta {
-  font-size: var(--font-size-small);
- }
+  font-size: var(--font-size-normal);
+}
 
 /** Images */
 img {
@@ -99,19 +99,19 @@ a.site-header-title-link:hover {
 .site-header {
   display: flex;
   position: sticky;
-  top: 30px;
-  opacity: .9;
+  top: 0px;
+  opacity: 0.9;
   background-color: var(--body-background-color);
-  margin-top: 20px;
   max-width: var(--width-max);
   min-width: var(--width-min);
   margin: auto;
-  text-align: center;
+  padding: 30px 0px 30px 0px;
+  text-align: justify;
+  justify-content: space-between;
 }
 
-.site-header-title,
-.site-nav-link {
-  padding: 10px;
+.site-header-title-link {
+  font-weight: 600;
 }
 
 /** Response Options */
@@ -126,7 +126,7 @@ a.site-header-title-link:hover {
   padding: 6px 8px 4px 8px;
   color: var(--body-text-color);
   border: 1px solid var(--shadow-color);
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin: 5px;
   border-radius: 5px;
   background-color: var(--card-background-color);
@@ -206,6 +206,9 @@ p.h-entry,
 div.photos-grid-container {
   list-style: none;
   margin-top: 25px;
+  padding-bottom: 30px;
+  border-bottom: var(--divider-color) 2px dotted;
+  margin-bottom: 70px;
 }
 
 .post-list img {
@@ -220,7 +223,6 @@ div.photos-grid-container {
 
 .post-list-item-title {
   display: block;
-  text-align: center;
   font-size: var(--font-size-large);
 }
 
@@ -233,14 +235,9 @@ a.post-list-item-date:hover {
   color: var(--hover-color);
 }
 
-.post-list-item-date {
-  display: block;
-  text-align: center;
-  font-size: var(--font-size-small);
-}
-
-a.post-list-item-date {
-  color: var(--font-color-secondary);
+.post-list-item-date, .post-list-item-title {
+  font-size: var(--font-size-normal);
+  font-weight: 600;
 }
 
 /** Blockquotes */
@@ -327,21 +324,23 @@ form button[type='submit'] {
   padding: 30px 0px 10px 0px;
 }
 
-.pagination .prev, .pagination .next{
+.pagination .prev,
+.pagination .next {
   padding: 30px;
 }
 
-.pagination .prev a:hover, .pagination .next a:hover {
+.pagination .prev a:hover,
+.pagination .next a:hover {
   color: var(--hover-color);
 }
-
 
 /*Simple css to style it like a toggle switch*/
 .theme-switch-wrapper {
   display: flex;
-position: absolute;
+  position: fixed;
   align-items: center;
-right:20px;
+  right: 20px;
+  bottom: 20px;
 }
 
 .theme-switch {
