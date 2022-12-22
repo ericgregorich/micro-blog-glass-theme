@@ -12,6 +12,11 @@
       "field": "params.usedarktheme",
       "label": "Enable Dark Theme Toggle?",
       "type": "boolean"
+    },
+    {
+      "field": "params.truncatehome",
+      "label": "Truncate content on the home page?",
+      "type": "boolean"
     }
   ]
 }
