@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "title": "Glass Theme",
+  "description": "A simple and customizable Micro.blog theme.",
+  "fields": [
+    {
+      "field": "params.showReadingTime",
+      "label": "Show Reading Time on posts greater than 1 minute?",
+      "type": "boolean"
+    },
+    {
+      "field": "params.usedarktheme",
+      "label": "Enable Dark Theme Toggle? This will alternate between the colors above and the colors below.",
+      "type": "boolean"
+    }
+  ]
+}
