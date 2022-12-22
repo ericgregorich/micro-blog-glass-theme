@@ -290,6 +290,15 @@ a.post-list-item-date:hover {
   color: var(--hover-color);
 }
 
+/** Continue */
+.continue-link {
+  font-size: var(--font-size-small);
+}
+
+.continue-link::after {
+  content: " >>>"
+}
+
 /** Blockquotes */
 blockquote {
   display: block;
