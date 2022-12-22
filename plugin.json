@@ -5,7 +5,7 @@
   "fields": [
     {
       "field": "params.showReadingTime",
-      "label": "Show Reading Time on posts greater than 1 minute?",
+      "label": "Show Reading Time?",
       "type": "boolean"
     },
     {
