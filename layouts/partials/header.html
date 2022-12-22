@@ -48,10 +48,14 @@
 <header class="site-header">
   <a class="site-header-title-link" href="/">{{ .Site.Title }}</a>
   {{ range .Site.Menus.main }} {{ if .Page.Params.redirect }}
+  <div class="nav-desktop">
   <a class="site-nav-link" href="{{ .Page.Params.redirect }}">{{ .Name }}</a>
   {{ else }}
   <a class="site-nav-link" href="{{ .URL | relLangURL | safeURL }}"
     >{{ .Name }}</a
-  >
+  ></div>
+  <div class="nav-mobile">
+
+  </div>
   {{ end }} {{ end }}
 </header>
