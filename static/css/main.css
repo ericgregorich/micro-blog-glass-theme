@@ -3,38 +3,38 @@
   --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-size-normal: 22px;
-  --font-size-small: 18px;
+  --font-size-small: 16px;
   --font-size-large: 26px;
   --font-size-title: 20px;
   --width-max: 900px;
   --width-min: 350px;
   --width-max-image: 890px;
-  --body-background-color: #f8f8f8;
-  --body-text-color: #242424;
-  --body-accent-color: #1184ab;
-  --hover-color: #d58400;
+  --body-background-color: #f7f7f7;
+  --body-text-color: #2a2a2b;
+  --body-accent-color: #304970;
+  --hover-color: #704E36;
   --blockquote: #f8eec4;
   --blockquote-border: #d6a32e;
   --blockquote-text: #2a2a2b;
-  --divider-color: #e3e3e3;
+  --divider-color: #D8D8D8;
 }
 
 [data-theme='light'] {
-  --body-background-color: #f8f8f8;
-  --body-text-color: #242424;
-  --body-accent-color: #1184ab;
-  --hover-color: #d58400;
+  --body-background-color: #f7f7f7;
+  --body-text-color: #2a2a2b;
+  --body-accent-color: #304970;
+  --hover-color: #704E36;
   --blockquote: #f8eec4;
   --blockquote-border: #d6a32e;
   --blockquote-text: #2a2a2b;
-  --divider-color: #e3e3e3;
+  --divider-color: #D8D8D8;
 }
 
 [data-theme='dark'] {
   --body-background-color: #2a2a2b;
   --body-text-color: #ffffff;
-  --body-accent-color: #1184ab;
-  --hover-color: #d58400;
+  --body-accent-color: #304970;
+  --hover-color: #704E36;
   --blockquote: #f8eec4;
   --blockquote-border: #d6a32e;
   --blockquote-text: #2a2a2b;
@@ -181,6 +181,7 @@ a.site-nav-link:visited {
   font-size: var(--font-size-small);
   color: var(--body-text-color);
   text-decoration: none;
+  padding: 0px 0px 0px 8px;
 }
 
 a.site-nav-link:hover {
