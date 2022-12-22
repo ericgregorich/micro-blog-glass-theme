@@ -2,8 +2,7 @@
   --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-size-normal: 22px;
-  --font-size-small: 18px;
-  --font-size-large: 26px;
+  --font-size-small: 16px;
   --width-max: 900px;
   --width-min: 350px;
   --width-max-image: 890px;
@@ -36,7 +35,7 @@ body {
   font-size: var(--font-size-normal);
   color: var(--body-text-color);
   line-height: 1.4;
-  margin-top: 0px;
+  margin: 0px 10px 10px 10px;
   background-color: var(--body-background-color);
 }
 
@@ -58,6 +57,7 @@ h3 {
 
 .post-meta {
   font-size: var(--font-size-normal);
+  font-weight: 600;
 }
 
 /** Images */
@@ -280,15 +280,14 @@ a.post-list-item-title {
   color: var(--body-accent-color);
 }
 
+a.post-list-item-title,
+a.post-list-item-date {
+  color: var(--body-text-color);
+}
+
 a.post-list-item-title:hover,
 a.post-list-item-date:hover {
   color: var(--hover-color);
-}
-
-.post-list-item-date,
-.post-list-item-title {
-  font-size: var(--font-size-normal);
-  font-weight: 600;
 }
 
 /** Blockquotes */
@@ -301,7 +300,7 @@ blockquote {
 }
 
 blockquote p::first-letter {
-  font-size: var(--font-size-large);
+  font-size: 1.8rem;
   font-weight: 600;
 }
 

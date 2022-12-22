@@ -12,7 +12,7 @@
 			<a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta">{{ .Title }}</span></a>
 			<div class="post-list-item-content">
 				<p>{{ .Summary | truncate 300 }}</p>
-				<a href="{{ .Permalink }}">Continue...</a>
+				<a href="{{ .Permalink }}" class="continue-link">Continue...</a>
 			</div>
 		</li>
 		{{ else }}
