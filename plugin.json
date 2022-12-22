@@ -10,7 +10,7 @@
     },
     {
       "field": "params.usedarktheme",
-      "label": "Enable Dark Theme Toggle? This will alternate between the colors above and the colors below.",
+      "label": "Enable Dark Theme Toggle?",
       "type": "boolean"
     }
   ]

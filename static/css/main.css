@@ -9,9 +9,6 @@
   --width-max: 780px;
   --width-min: 350px;
   --width-max-image: 720px;
-}
-
-[data-theme="light"] {
   --body-background-color: #f8f8f8;
   --body-text-color: #242424;
   --body-accent-color: #1184ab;
@@ -25,7 +22,21 @@
   --shadow-color: #e3e3e3;
 }
 
-[data-theme="dark"] {
+[data-theme='light'] {
+  --body-background-color: #f8f8f8;
+  --body-text-color: #242424;
+  --body-accent-color: #1184ab;
+  --card-background-color: ##ffffff;
+  --card-text-color: #252525;
+  --card-accent-color: #1084ab;
+  --hover-color: #d58400;
+  --blockquote: #f8eec4;
+  --blockquote-border: #d6a32e;
+  --blockquote-text: #2a2a2b;
+  --shadow-color: #e3e3e3;
+}
+
+[data-theme='dark'] {
   --body-background-color: #f8f8f8;
   --body-text-color: #242424;
   --body-accent-color: #1184ab;
