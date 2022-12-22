@@ -295,10 +295,6 @@ a.post-list-item-date:hover {
   font-size: var(--font-size-small);
 }
 
-.continue-link::after {
-  content: " >>>"
-}
-
 /** Blockquotes */
 blockquote {
   display: block;
