@@ -8,23 +8,26 @@
   --width-max-image: 890px;
   --body-background-color: #f6f6f6;
   --body-text-color: #2a2a2b;
+  --body-subtle-color: #747474;
   --body-accent-color: #1049a3;
   --hover-color: #cf7510;
-  --divider-color: #d8d8d8;
+  --divider-color: #dcdada;
 }
 
 [data-theme='light'] {
   --body-background-color: #f6f6f6;
   --body-text-color: #2a2a2b;
+  --body-subtle-color: #747474;
   --body-accent-color: #1049a3;
   --hover-color: #cf7510;
-  --divider-color: #d8d8d8;
+  --divider-color: #dcdada;
 }
 
 [data-theme='dark'] {
   --body-background-color: #393945;
   --body-text-color: #ffffff;
-  --body-accent-color: #5a94f3;
+  --body-subtle-color: #cccccc;
+  --body-accent-color: #7385e4;
   --hover-color: #cf7510;
   --divider-color: #565555;
 }
@@ -53,6 +56,12 @@ h3 {
 
 .post-list-title {
   text-align: center;
+}
+
+.post-header .post-meta {
+  font-size: var(--font-size-small);
+  color: var(--body-subtle-color);
+  font-weight: normal;
 }
 
 .post-meta {
@@ -144,6 +153,16 @@ nav ul li a:hover {
   text-decoration: none;
 }
 @media screen and (max-width: 560px) {
+  .site-header {
+    display: flex;
+    position: inherit;
+    opacity: 1;
+    background-color: var(--body-background-color);
+    max-width: var(--width-max);
+    min-width: var(--width-min);
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+  }
   .nav-container ul li a {
     color: #ffffff;
   }
@@ -177,7 +196,7 @@ nav ul li a:hover {
   .nav-open {
     position: fixed;
     right: 10px;
-    top: 10px;
+    top: 0px;
     display: block;
     width: 48px;
     height: 48px;
@@ -298,15 +317,15 @@ a.post-list-item-date:hover {
 /** Blockquotes */
 blockquote {
   display: block;
-  padding: 15px 20px 15px 45px;
+  padding: 15px 55px 15px 55px;
   margin: 0 0 20px;
   position: relative;
   text-align: justify;
-  border-left: 4px solid #d6a32e;
-  border-right: 4px solid #d6a32e;
-  border-top: 1px solid #d6a32e;
-  border-bottom: 1px solid #d6a32e;
-  background-color: #f8eec4;
+  border-left: 4px solid #7e8198;
+  border-right: 4px solid #7e8198;
+  border-top: 1px solid #7e8198;
+  border-bottom: 1px solid #7e8198;
+  background-color: #e6e7ed;
   border-radius: 5px;
   margin-left: 0px;
   margin-right: 0px;
@@ -322,14 +341,21 @@ blockquote::before {
   font-family: Georgia, serif;
   font-size: 60px;
   font-weight: bold;
-  color: #000;
+  color: #7e8198;
   position: absolute;
   left: 10px;
   top: 5px;
 }
 
 blockquote::after {
-  content: '';
+  content: '\201D';
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #7e8198;
+  position: absolute;
+  right: 10px;
+  bottom: -30px;
 }
 
 /** Conversation */
