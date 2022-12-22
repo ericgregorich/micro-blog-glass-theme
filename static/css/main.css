@@ -154,7 +154,7 @@ nav ul li a:hover {
   color: #1e90ff;
   text-decoration: none;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 800px) {
   .site-header {
     display: flex;
     position: inherit;
