@@ -11,11 +11,11 @@
   --conversation-bg-color: #FFFFFF;
   --body-text-color: #2a2a2b;
   --body-subtle-color: #747474;
-  --body-accent-color: #1A756B;
-  --hover-color: #C23F04;
-  --divider-color: #dcdada;
-  --blockquote-border-color: #1A756B;
-  --gradient-bg: radial-gradient(circle, rgba(232,232,232,1) 0%, rgba(255,255,255,1) 50%, rgba(246,246,246,1) 100%);
+  --body-accent-color: #3479a7;
+  --hover-color: #A64544;
+  --divider-color: #e9eaeb;
+  --blockquote-border-color: #3479a7;
+  --gradient-bg: radial-gradient(circle, rgba(238,242,245,1) 0%, rgba(255,255,255,1) 50%, rgba(246,246,246,1) 100%);
 }
 
 [data-theme='light'] {
@@ -23,11 +23,11 @@
   --conversation-bg-color: #FFFFFF;
   --body-text-color: #2a2a2b;
   --body-subtle-color: #747474;
-  --body-accent-color: #1A756B;
-  --hover-color: #C23F04;
-  --divider-color: #dcdada;
-  --blockquote-border-color: #1A756B;
-  --gradient-bg: radial-gradient(circle, rgba(232,232,232,1) 0%, rgba(255,255,255,1) 50%, rgba(246,246,246,1) 100%);
+  --body-accent-color: #3479a7;
+  --hover-color: #A64544;
+  --divider-color: #e9eaeb;
+  --blockquote-border-color: #3479a7;
+  --gradient-bg: radial-gradient(circle, rgba(238,242,245,1) 0%, rgba(255,255,255,1) 50%, rgba(246,246,246,1) 100%);
 }
 
 [data-theme='dark'] {
@@ -35,11 +35,11 @@
   --conversation-bg-color: #212121;
   --body-text-color: #F9F9F9;
   --body-subtle-color: #ececec;
-  --body-accent-color: #128e7f;
-  --hover-color: #C23F04;
-  --divider-color: #565555;
-  --blockquote-border-color: #474d4b;
-  --gradient-bg: radial-gradient(circle, rgba(71,77,75,1) 0%, rgba(71,77,75,1) 50%, rgba(42,42,43,1) 100%);
+  --body-accent-color: #3292d1;
+  --hover-color: #b45a59;
+  --divider-color: #175077;
+  --blockquote-border-color: #175077;
+  --gradient-bg: radial-gradient(circle, rgba(13,58,89,1) 0%, rgba(13,58,89,1) 50%, rgba(42,42,43,1) 100%);
 }
 
 /** Basic styling */
@@ -53,11 +53,11 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 h3 {
@@ -70,7 +70,6 @@ h3 {
 
 .post-header {
   background: var(--gradient-bg);
-  border-radius: 5px;
   padding: 10px;
   border-top: 2px dotted var(--divider-color);
   border-bottom: 2px dotted var(--divider-color);
@@ -337,10 +336,10 @@ blockquote {
   margin: 15px 0 15px;
   position: relative;
   text-align: justify;
-  border-left: 4px solid var(--blockquote-border-color);
-  border-right: 4px solid var(--blockquote-border-color);
-  border-top: 1px solid var(--blockquote-border-color);
-  border-bottom: 1px solid var(--blockquote-border-color);
+  border-left: 1px solid var(--blockquote-border-color);
+  border-right: 1px solid var(--blockquote-border-color);
+  border-top: 4px solid var(--blockquote-border-color);
+  border-bottom: 4px solid var(--blockquote-border-color);
   background: var(--gradient-bg);
   border-radius: 5px;
   margin-left: 0px;
