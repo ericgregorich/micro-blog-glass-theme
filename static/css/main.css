@@ -72,7 +72,8 @@ h3 {
   background: var(--gradient-bg);
   border-radius: 5px;
   padding: 10px;
-  border: 2px dotted var(--divider-color);
+  border-top: 2px dotted var(--divider-color);
+  border-bottom: 2px dotted var(--divider-color);
 }
 
 .post-header .post-meta {
