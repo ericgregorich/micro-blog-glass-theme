@@ -11,9 +11,11 @@
   --conversation-bg-color: #FFFFFF;
   --body-text-color: #2a2a2b;
   --body-subtle-color: #747474;
-  --body-accent-color: #1c7203;
-  --hover-color: #cf7510;
+  --body-accent-color: #1A756B;
+  --hover-color: #C23F04;
   --divider-color: #dcdada;
+  --blockquote-border-color: #1A756B;
+  --gradient-bg: radial-gradient(circle, rgba(232,232,232,1) 0%, rgba(255,255,255,1) 50%, rgba(246,246,246,1) 100%);
 }
 
 [data-theme='light'] {
@@ -21,19 +23,23 @@
   --conversation-bg-color: #FFFFFF;
   --body-text-color: #2a2a2b;
   --body-subtle-color: #747474;
-  --body-accent-color: #1c7203;
-  --hover-color: #cf7510;
+  --body-accent-color: #1A756B;
+  --hover-color: #C23F04;
   --divider-color: #dcdada;
+  --blockquote-border-color: #1A756B;
+  --gradient-bg: radial-gradient(circle, rgba(232,232,232,1) 0%, rgba(255,255,255,1) 50%, rgba(246,246,246,1) 100%);
 }
 
 [data-theme='dark'] {
-  --body-background-color: #393945;
-  --conversation-bg-color: #FFFFFF;
-  --body-text-color: #ffffff;
-  --body-subtle-color: #cccccc;
-  --body-accent-color: #7385e4;
-  --hover-color: #cf7510;
+  --body-background-color: #2a2a2b;
+  --conversation-bg-color: #212121;
+  --body-text-color: #F9F9F9;
+  --body-subtle-color: #ececec;
+  --body-accent-color: #128e7f;
+  --hover-color: #C23F04;
   --divider-color: #565555;
+  --blockquote-border-color: #474d4b;
+  --gradient-bg: radial-gradient(circle, rgba(71,77,75,1) 0%, rgba(71,77,75,1) 50%, rgba(42,42,43,1) 100%);
 }
 
 /** Basic styling */
@@ -60,6 +66,13 @@ h3 {
 
 .post-list-title {
   text-align: center;
+}
+
+.post-header {
+  background: var(--gradient-bg);
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px dotted var(--divider-color);
 }
 
 .post-header .post-meta {
@@ -323,11 +336,11 @@ blockquote {
   margin: 15px 0 15px;
   position: relative;
   text-align: justify;
-  border-left: 4px solid var(--body-accent-color);
-  border-right: 4px solid var(--body-accent-color);
-  border-top: 1px solid var(--body-accent-color);
-  border-bottom: 1px solid var(--body-accent-color);
-  background-color: #a6c3b180;
+  border-left: 4px solid var(--blockquote-border-color);
+  border-right: 4px solid var(--blockquote-border-color);
+  border-top: 1px solid var(--blockquote-border-color);
+  border-bottom: 1px solid var(--blockquote-border-color);
+  background: var(--gradient-bg);
   border-radius: 5px;
   margin-left: 0px;
   margin-right: 0px;
@@ -337,7 +350,7 @@ blockquote p::first-letter {
   font-size: 1.8rem;
   font-weight: 600;
   font-style: italic;
-  color: var(--body-accent-color);
+  color: var(--blockquote-border-color);
 }
 
 blockquote::before {
@@ -346,7 +359,7 @@ blockquote::before {
   font-size: 60px;
   font-style: italic;
   font-weight: bold;
-  color: var(--body-accent-color);
+  color: var(--blockquote-border-color);
   position: absolute;
   left: 10px;
   top: 5px;
@@ -358,7 +371,7 @@ blockquote::after {
   font-size: 60px;
   font-style: italic;
   font-weight: bold;
-  color: var(--body-accent-color);
+  color: var(--blockquote-border-color);
   position: absolute;
   right: 10px;
   bottom: -30px;
@@ -368,9 +381,10 @@ blockquote::after {
 .microblog_post {
   margin-top: 20px;
   padding: 20px;
-  background: var(--conversation-bg-color);
+  background: var(--gradient-bg);
   border-radius: 15px;
   border: 2px dotted var(--divider-color);
+  border-radius: 5px;
 }
 
 /** Response Options */
