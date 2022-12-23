@@ -49,7 +49,12 @@
   --hover-color: #ffd903;
   --divider-color: #184a6a;
   --blockquote-border-color: #175077;
-  --gradient-bg: radial-gradient(circle, rgba(11,48,74,1) 0%, rgba(9,39,60,1) 50%, rgba(12,37,53,1) 100%);
+  --gradient-bg: radial-gradient(
+    circle,
+    rgba(11, 48, 74, 1) 0%,
+    rgba(9, 39, 60, 1) 50%,
+    rgba(12, 37, 53, 1) 100%
+  );
 }
 
 /** Basic styling */
