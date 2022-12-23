@@ -8,38 +8,53 @@
   --width-min: 350px;
   --width-max-image: 890px;
   --body-background-color: #f6f6f6;
-  --conversation-bg-color: #FFFFFF;
+  --conversation-bg-color: #ffffff;
   --body-text-color: #2a2a2b;
   --body-subtle-color: #747474;
   --body-accent-color: #3479a7;
-  --hover-color: #A64544;
+  --hover-color: #a64544;
   --divider-color: #e9eaeb;
   --blockquote-border-color: #3479a7;
-  --gradient-bg: radial-gradient(circle, rgba(238,242,245,1) 0%, rgba(255,255,255,1) 50%, rgba(246,246,246,1) 100%);
+  --gradient-bg: radial-gradient(
+    circle,
+    rgba(238, 242, 245, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(246, 246, 246, 1) 100%
+  );
 }
 
 [data-theme='light'] {
   --body-background-color: #f6f6f6;
-  --conversation-bg-color: #FFFFFF;
+  --conversation-bg-color: #ffffff;
   --body-text-color: #2a2a2b;
   --body-subtle-color: #747474;
   --body-accent-color: #3479a7;
-  --hover-color: #A64544;
+  --hover-color: #a64544;
   --divider-color: #e9eaeb;
   --blockquote-border-color: #3479a7;
-  --gradient-bg: radial-gradient(circle, rgba(238,242,245,1) 0%, rgba(255,255,255,1) 50%, rgba(246,246,246,1) 100%);
+  --gradient-bg: radial-gradient(
+    circle,
+    rgba(238, 242, 245, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(246, 246, 246, 1) 100%
+  );
 }
 
 [data-theme='dark'] {
   --body-background-color: #2a2a2b;
   --conversation-bg-color: #212121;
-  --body-text-color: #F9F9F9;
+  --body-text-color: #f9f9f9;
   --body-subtle-color: #ececec;
   --body-accent-color: #3292d1;
   --hover-color: #b45a59;
   --divider-color: #175077;
   --blockquote-border-color: #175077;
-  --gradient-bg: radial-gradient(circle, rgba(13,58,89,1) 0%, rgba(13,58,89,1) 50%, rgba(42,42,43,1) 100%);
+  --gradient-bg: radial-gradient(
+    circle,
+    rgba(13, 58, 89, 1) 0%,
+    rgba(13, 58, 89, 1) 50%,
+    rgba(42, 42, 43, 1) 100%
+  );
 }
 
 /** Basic styling */
@@ -68,11 +83,14 @@ h3 {
   text-align: center;
 }
 
-.post-header {
+.post-header,
+.archive_categories,
+.post-list-title {
   background: var(--gradient-bg);
   padding: 10px;
   border-top: 2px dotted var(--divider-color);
   border-bottom: 2px dotted var(--divider-color);
+  margin-bottom: 20px;
 }
 
 .post-header .post-meta {
@@ -299,7 +317,6 @@ li.h-entry,
 p.h-entry,
 div.photos-grid-container {
   list-style: none;
-  margin-top: 25px;
   padding-bottom: 30px;
   border-bottom: var(--divider-color) 2px dotted;
   margin-bottom: 70px;
@@ -442,8 +459,11 @@ div.archive_categories {
 
 div.archive_categories p {
   margin: 10px;
-  border-bottom: 2px dotted var(--divider-color);
   display: inline;
+}
+
+div.archive_categories p a {
+  font-size: var(--font-size-small);
 }
 
 div.archive_categories p a:hover {
@@ -464,7 +484,7 @@ textarea[name='message'] {
   border: 2px solid var(--divider-color);
   border-radius: 10px;
   width: 100%;
-  margin: 20px;
+  margin-bottom: 20px;
   height: 25px;
   font-size: var(--font-size-normal);
 }
