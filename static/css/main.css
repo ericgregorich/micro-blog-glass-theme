@@ -2,7 +2,7 @@
   --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-size-normal: 1.3rem;
-  --font-size-small: 1rem;
+  --font-size-small: 1.1rem;
   --font-size-large: 2rem;
   --width-max: 900px;
   --width-min: 350px;
@@ -13,11 +13,11 @@
   --body-subtle-color: #747474;
   --body-accent-color: #3479a7;
   --hover-color: #a64544;
-  --divider-color: #e9eaeb;
+  --divider-color: #cad8de;
   --blockquote-border-color: #3479a7;
   --gradient-bg: radial-gradient(
     circle,
-    rgba(238, 242, 245, 1) 0%,
+    rgba(229, 238, 245, 1) 0%,
     rgba(255, 255, 255, 1) 50%,
     rgba(246, 246, 246, 1) 100%
   );
@@ -30,31 +30,26 @@
   --body-subtle-color: #747474;
   --body-accent-color: #3479a7;
   --hover-color: #a64544;
-  --divider-color: #e9eaeb;
+  --divider-color: #cad8de;
   --blockquote-border-color: #3479a7;
   --gradient-bg: radial-gradient(
     circle,
-    rgba(238, 242, 245, 1) 0%,
+    rgba(229, 238, 245, 1) 0%,
     rgba(255, 255, 255, 1) 50%,
     rgba(246, 246, 246, 1) 100%
   );
 }
 
 [data-theme='dark'] {
-  --body-background-color: #2a2a2b;
-  --conversation-bg-color: #212121;
+  --body-background-color: #0c2535;
+  --conversation-bg-color: #184a6a;
   --body-text-color: #f9f9f9;
   --body-subtle-color: #ececec;
   --body-accent-color: #3292d1;
-  --hover-color: #b45a59;
-  --divider-color: #175077;
+  --hover-color: #ffd903;
+  --divider-color: #184a6a;
   --blockquote-border-color: #175077;
-  --gradient-bg: radial-gradient(
-    circle,
-    rgba(13, 58, 89, 1) 0%,
-    rgba(13, 58, 89, 1) 50%,
-    rgba(42, 42, 43, 1) 100%
-  );
+  --gradient-bg: radial-gradient(circle, rgba(11,48,74,1) 0%, rgba(9,39,60,1) 50%, rgba(12,37,53,1) 100%);
 }
 
 /** Basic styling */
@@ -87,10 +82,8 @@ h3 {
 .archive_categories,
 .post-list-title {
   background: var(--gradient-bg);
-  padding: 10px;
-  border-top: 2px dotted var(--divider-color);
-  border-bottom: 2px dotted var(--divider-color);
-  margin-bottom: 20px;
+  border-top: 1px solid var(--divider-color);
+  border-bottom: 1px solid var(--divider-color);
 }
 
 .post-header .post-meta {
@@ -363,13 +356,6 @@ blockquote {
   margin-right: 0px;
 }
 
-blockquote p::first-letter {
-  font-size: 1.8rem;
-  font-weight: 600;
-  font-style: italic;
-  color: var(--blockquote-border-color);
-}
-
 blockquote::before {
   content: '\201C';
   font-family: Georgia, serif;
@@ -430,6 +416,8 @@ a.site-header-title-link {
   font-size: var(--font-size-small);
   color: var(--body-text-color);
   align-self: center;
+  text-transform: uppercase;
+  display: flex;
 }
 
 .site-image {
@@ -480,10 +468,10 @@ input[id='input_search'],
 input[type='email'],
 input[type='text'],
 textarea[name='message'] {
-  padding: 8px;
-  border: 2px solid var(--divider-color);
+  padding: 10px;
+  border: 1px solid var(--divider-color);
   border-radius: 10px;
-  width: 100%;
+  width: 98%;
   margin-bottom: 20px;
   height: 25px;
   font-size: var(--font-size-normal);
