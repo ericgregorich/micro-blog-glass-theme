@@ -15,7 +15,7 @@
   --hover-color: #1072b4;
   --divider-color: #d9c5c5;
   --blockquote-border-color: #a64544;
-  --gradient-bg: radial-gradient(circle, rgba(241,232,232,1) 0%, rgba(246,246,246,1) 50%, rgba(246,246,246,1) 100%);
+  --gradient-bg: radial-gradient(circle, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 50%, rgba(246,246,246,1) 100%);
 }
 
 [data-theme='light'] {
@@ -27,7 +27,7 @@
   --hover-color: #1072b4;
   --divider-color: #d9c5c5;
   --blockquote-border-color: #a64544;
-  --gradient-bg: radial-gradient(circle, rgba(241,232,232,1) 0%, rgba(246,246,246,1) 50%, rgba(246,246,246,1) 100%);
+  --gradient-bg: radial-gradient(circle, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 50%, rgba(246,246,246,1) 100%);
 }
 
 [data-theme='dark'] {
