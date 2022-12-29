@@ -13,9 +13,14 @@
   --body-subtle-color: #747474;
   --body-accent-color: #a64544;
   --hover-color: #1072b4;
-  --divider-color: #d9c5c5;
+  --divider-color: #e2e1e1;
   --blockquote-border-color: #a64544;
-  --gradient-bg: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(246,246,246,1) 100%);
+  --gradient-bg: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 50%,
+    rgba(246, 246, 246, 1) 100%
+  );
 }
 
 [data-theme='light'] {
@@ -25,9 +30,14 @@
   --body-subtle-color: #747474;
   --body-accent-color: #a64544;
   --hover-color: #1072b4;
-  --divider-color: #d9c5c5;
+  --divider-color: #e2e1e1;
   --blockquote-border-color: #a64544;
-  --gradient-bg: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 50%, rgba(246,246,246,1) 100%);
+  --gradient-bg: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 50%,
+    rgba(246, 246, 246, 1) 100%
+  );
 }
 
 [data-theme='dark'] {
