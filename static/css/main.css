@@ -11,8 +11,8 @@
   --conversation-bg-color: #ffffff;
   --body-text-color: #2a2a2b;
   --body-subtle-color: #747474;
-  --body-accent-color: #a64544;
-  --hover-color: #1072b4;
+  --body-accent-color: #1072b4;
+  --hover-color: #a64544;
   --divider-color: #e2e1e1;
   --blockquote-border-color: #a64544;
   --gradient-bg: radial-gradient(
@@ -28,8 +28,8 @@
   --conversation-bg-color: #ffffff;
   --body-text-color: #2a2a2b;
   --body-subtle-color: #747474;
-  --body-accent-color: #a64544;
-  --hover-color: #1072b4;
+  --body-accent-color: #1072b4;
+  --hover-color: #a64544;
   --divider-color: #e2e1e1;
   --blockquote-border-color: #a64544;
   --gradient-bg: radial-gradient(
@@ -62,8 +62,8 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size-normal);
   color: var(--body-text-color);
-  line-height: 1.4;
-  margin: 0px 10px 10px 10px;
+  line-height: 1.5;
+  margin: 0px 20px 20px 20px;
   background-color: var(--body-background-color);
 }
 
@@ -150,9 +150,10 @@ a.site-header-title-link:hover {
 
 /** Site Nav */
 .nav-container ul li a {
-  font-size: var(--font-size-small);
+  font-size: .9rem;
   color: var(--body-text-color);
   text-decoration: none;
+text-transform: uppercase;
   padding: 0px 0px 0px 8px;
   font-weight: 600;
 }
