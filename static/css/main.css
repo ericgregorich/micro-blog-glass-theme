@@ -165,7 +165,7 @@ text-transform: uppercase;
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 nav ul {
