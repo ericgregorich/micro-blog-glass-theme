@@ -14,11 +14,11 @@
   --body-accent-color: #1072b4;
   --hover-color: #a64544;
   --divider-color: #e2e1e1;
-  --blockquote-border-color: #a64544;
+  --blockquote-border-color: #1072b4;
   --gradient-bg: radial-gradient(
     circle,
     rgba(255, 255, 255, 1) 0%,
-    rgba(246, 246, 246, 1) 50%,
+    rgba(230, 234, 237, 1) 50%,
     rgba(246, 246, 246, 1) 100%
   );
 }
@@ -31,11 +31,11 @@
   --body-accent-color: #1072b4;
   --hover-color: #a64544;
   --divider-color: #e2e1e1;
-  --blockquote-border-color: #a64544;
+  --blockquote-border-color: #1072b4;
   --gradient-bg: radial-gradient(
     circle,
     rgba(255, 255, 255, 1) 0%,
-    rgba(246, 246, 246, 1) 50%,
+    rgba(230, 234, 237, 1) 50%,
     rgba(246, 246, 246, 1) 100%
   );
 }
@@ -103,6 +103,10 @@ h3 {
   font-weight: 600;
 }
 
+.post-meta  span {
+  margin-right: 10px;
+}
+
 /** Images */
 img {
   max-width: 100%;
@@ -150,10 +154,10 @@ a.site-header-title-link:hover {
 
 /** Site Nav */
 .nav-container ul li a {
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: var(--body-text-color);
   text-decoration: none;
-text-transform: uppercase;
+  text-transform: uppercase;
   padding: 0px 0px 0px 8px;
   font-weight: 600;
 }
@@ -455,6 +459,7 @@ div.archive_categories p {
   margin: 10px;
   display: inline;
 }
+
 
 div.archive_categories p a {
   font-size: var(--font-size-small);
