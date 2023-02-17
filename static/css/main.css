@@ -2,8 +2,8 @@
   --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-size-normal: 1.2rem;
-  --font-size-small: 1.1rem;
-  --font-size-large: 2rem;
+  --font-size-small: 1rem;
+  --font-size-large: 1.8rem;
   --width-max: 850px;
   --width-min: 310px;
   --width-max-image: 890px;
@@ -304,6 +304,7 @@ nav ul li a:hover {
 
 .site-footer-text {
   text-align: center;
+  font-size: var(--font-size-small);
 }
 
 /** Content */
