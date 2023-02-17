@@ -1,8 +1,8 @@
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta name="description" content="{{ .Summary | truncate 160 }}" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <meta name="description" content="{{ .Summary | truncate 160 }}">
   <title>
     {{ block "title" . }} {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{
     .Site.Title }} - {{with .Title }}{{ . }}{{else}} {{.Summary | truncate 50 }}{{end}}{{ end }} {{ end }}
