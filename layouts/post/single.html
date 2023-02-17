@@ -1,63 +1,60 @@
 {{ define "main" }}
-	<div class="post h-entry">
-		<header class="post-header">
-			{{ if .Title }}
-			<h1 class="post-list-item-title">{{ .Title }}</h1>
-			<p class="post-meta">
-				<span><time class="post-list-item-date" datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{
-						.Date.Format "Jan 2, 2006" }}</time></span>
-				{{ if .Site.Params.showReadingTime }}
+<div class="post h-entry">
+
+  <header class="post-header">
+	{{ if .Title }}
+	  	<h1 class="post-list-item-title">{{ .Title }}</h1>
+		  <p class="post-meta">
+			<span><time class="post-list-item-date" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span>
+			{{ if .Site.Params.showReadingTime }}
 				<span>{{ if gt .ReadingTime 1 }} Reading Time: {{ .ReadingTime }} minutes{{ end }}</span>
-				{{ end }}
-				{{ if .Params.author }}
-				<span>by {{ .Params.author.name }}</span>
-				{{ end }}
-				{{ with .Params.categories }}
-				{{ range . }}
-				{{ $name := . }}
-				{{ with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy"
-				(printf "categories/%s" ($name | urlize))) }}
-				<span><a href="{{ .Permalink }}" class="p-category">{{ $name }}</a></span>
-				{{ end -}}
-				{{ end }}
-				{{ end }}
-			</p>
-			{{ else }}
-			<h1 class="post-list-item-title"><time class="post-list-item-date" datetime="{{ .Date.Format " 2006-01-02
-					15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></h1>
-			<p class="post-meta">
-				{{ if .Params.author }}
-				by {{ .Params.author.name }}
-				{{ end }}
-				{{ with .Params.categories }}
-				{{ range . }}
-				{{ $name := . }}
-				{{ with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy"
-				(printf "categories/%s" ($name | urlize))) }}
-				<a href="{{ .Permalink }}" class="p-category">{{ $name }}</a>
-				{{ end -}}
-				{{ end }}
-				{{ end }}
-			</p>
 			{{ end }}
-		</header>
-		<article class="post-content e-content">
-			{{ .Content }}
-		</article>
-	</div>
-	{{ if eq .Type "post"}}
-	{{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") }}
-	<section>
-		<div class="response-options">
-			{{ if templates.Exists "partials/conversation-link.html" }}{{ partial "conversation-link.html" . }}{{ end }}
-			{{ if templates.Exists "partials/reply-by-email.html" }}{{ partial "reply-by-email.html" . }}{{ end }}
-		</div>
-	</section>
-	{{ end }}
-	{{ end }}
-	{{ if .Site.Params.include_conversation }}
-	<section>
-		<script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
-	</section>
-	{{ end }}
+			{{ if .Params.author }}
+				<span>by {{ .Params.author.name }}</span>
+			{{ end }}
+				{{ with .Params.categories  }}
+					  {{ range . }}
+					  {{ $name := . }}
+						{{ with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) }}
+						<span><a href="{{ .Permalink }}" class="p-category" >{{ $name }}</a></span>
+						{{ end -}}
+					  {{ end }}
+					  {{ end }}
+			</p>
+	{{ else }}
+		<h1 class="post-list-item-title"><time class="post-list-item-date" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></h1>
+		<p class="post-meta">
+			{{ if .Params.author }}
+				by {{ .Params.author.name }}
+			{{ end }}
+{{ with .Params.categories  }}
+					  {{ range . }}
+					  {{ $name := . }}
+						{{ with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) }}
+						<a href="{{ .Permalink }}" class="p-category" >{{ $name }}</a>
+						{{ end -}}
+					  {{ end }}
+					  {{ end }}
+			</p>
+  	{{ end }}
+
+  </header>
+
+  <article class="post-content e-content">
+	{{ .Content }}
+  </article>
+
+</div>
+{{ if eq .Type "post"}}
+    {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") }}
+<div class="response-options">
+	{{ if templates.Exists "partials/conversation-link.html" }}{{ partial "conversation-link.html" . }}{{ end }}
+	{{ if templates.Exists "partials/reply-by-email.html" }}{{ partial "reply-by-email.html" . }}{{ end }}
+</div>
+{{ end }}
+  {{ end }}
+{{ if .Site.Params.include_conversation }}
+<script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
+{{ end }}
+
 {{ end }}
