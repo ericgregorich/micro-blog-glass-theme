@@ -46,7 +46,7 @@
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
   {{ range .Site.Params.plugins_css }}
-  <link rel="stylesheet" href="{{ . }}" />
+  <link rel="stylesheet" href="{{ . }}">
   {{ end }} {{ range $filename := .Site.Params.plugins_html }} {{ partial
   $filename $ }} {{ end }}
 </head>
