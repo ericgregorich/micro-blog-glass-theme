@@ -299,8 +299,11 @@ nav ul li a:hover {
   max-width: var(--width-max);
   min-width: var(--width-min);
   margin: auto;
-  text-align: center;
   font-size: var(--font-size-small);
+}
+
+.site-footer-text {
+  text-align: center;
 }
 
 /** Content */
