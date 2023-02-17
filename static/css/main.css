@@ -19,12 +19,12 @@
     circle,
     rgba(255, 255, 255, 1) 0%,
     rgba(230, 234, 237, 1) 50%,
-    rgba(246, 246, 246, 1) 100%
+    rgba(249, 249, 249, 1) 100%
   );
 }
 
 [data-theme='light'] {
-  --body-background-color: #f6f6f6;
+  --body-background-color: #F9F9F9;
   --conversation-bg-color: #ffffff;
   --body-text-color: #2a2a2b;
   --body-subtle-color: #747474;
@@ -36,7 +36,7 @@
     circle,
     rgba(255, 255, 255, 1) 0%,
     rgba(230, 234, 237, 1) 50%,
-    rgba(246, 246, 246, 1) 100%
+    rgba(249, 249, 249, 1) 100%
   );
 }
 
