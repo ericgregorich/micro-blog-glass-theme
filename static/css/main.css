@@ -555,3 +555,9 @@ input:checked + .slider:before {
   margin: auto;
   text-align: center;
 }
+
+/** Summary Cards */
+.summary-wrapper {
+  background-color: var(--body-background-color);
+  color: var(--body-text-color);
+}
