@@ -68,7 +68,7 @@ body {
 }
 
 hr {
-  border-top: var(--divider-color) 2px dotted;
+  border-top: #e2e1e1 2px dotted;
 }
 
 h1 {
