@@ -484,6 +484,10 @@ form button[type='submit'] {
   font-size: var(--font-size-normal);
 }
 
+label {
+  line-height: 50px;
+}
+
 /** Pagination */
 .pagination {
   text-align: center;
