@@ -7,13 +7,13 @@
   --width-max: 700px;
   --width-min: 310px;
   --width-max-image: 890px;
-  --body-background-color: #f9f9f9;
+  --body-background-color: #ffffff;
   --conversation-bg-color: #ffffff;
   --body-text-color: #111111;
   --body-subtle-color: #747474;
   --body-accent-color: #1072b4;
   --hover-color: #a64544;
-  --divider-color: #e2e1e1;
+  --divider-color: #d5d7da;
   --blockquote-border-color: #1072b4;
   --gradient-bg: radial-gradient(
     circle,
