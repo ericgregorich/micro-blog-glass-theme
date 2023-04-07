@@ -68,7 +68,7 @@ body {
 }
 
 hr {
-  border-top: #e2e1e1 2px dotted;
+  border-top: var(--divider-color) 2px dotted;
 }
 
 h1 {
@@ -314,7 +314,6 @@ p.h-entry,
 div.photos-grid-container {
   list-style: none;
   padding-bottom: 30px;
-  border-bottom: var(--divider-color) 2px dotted;
   margin-bottom: 70px;
 }
 
@@ -397,7 +396,6 @@ blockquote::after {
   margin: 5px;
   background-color: var(--conversation-bg-color);
   padding: 6px;
-  border: 2px dotted var(--divider-color);
   border-radius: 8px;
 }
 
