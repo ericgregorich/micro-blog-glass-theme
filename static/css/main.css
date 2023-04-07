@@ -67,6 +67,10 @@ body {
   background-color: var(--body-background-color);
 }
 
+hr {
+  border-top: var(--divider-color) 2px dotted;
+}
+
 h1 {
   font-size: 2rem;
 }
