@@ -7,7 +7,7 @@
   --width-max: 800px;
   --width-min: 310px;
   --width-max-image: 890px;
-  --body-background-color: #F9F9F9;
+  --body-background-color: #f9f9f9;
   --conversation-bg-color: #ffffff;
   --body-text-color: #2a2a2b;
   --body-subtle-color: #747474;
@@ -24,7 +24,7 @@
 }
 
 [data-theme='light'] {
-  --body-background-color: #F9F9F9;
+  --body-background-color: #f9f9f9;
   --conversation-bg-color: #ffffff;
   --body-text-color: #2a2a2b;
   --body-subtle-color: #747474;
@@ -103,7 +103,7 @@ h3 {
   font-weight: 600;
 }
 
-.post-meta  span {
+.post-meta span {
   margin-right: 10px;
 }
 
@@ -264,6 +264,17 @@ nav ul li a:hover {
 }
 
 /** Site Footer */
+footer {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+}
+
+footer div {
+  margin-top: 30px;
+}
+
 .site-footer {
   max-width: var(--width-max);
   min-width: var(--width-min);
@@ -433,7 +444,6 @@ div.archive_categories p {
   display: inline;
 }
 
-
 div.archive_categories p a {
   font-size: var(--font-size-small);
 }
@@ -455,8 +465,9 @@ textarea[name='message'] {
   padding: 10px;
   border: 1px solid var(--divider-color);
   border-radius: 10px;
-  width: 98%;
+  width: 82%;
   margin-bottom: 20px;
+  margin-right: 10px;
   height: 25px;
   font-size: var(--font-size-normal);
 }
