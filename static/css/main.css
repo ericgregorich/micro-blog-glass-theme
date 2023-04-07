@@ -1,15 +1,15 @@
 :root {
   --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  --font-size-normal: 1.2rem;
+  --font-size-normal: 1.1rem;
   --font-size-small: 1rem;
-  --font-size-large: 1.8rem;
+  --font-size-large: 1.7rem;
   --width-max: 800px;
   --width-min: 310px;
   --width-max-image: 890px;
   --body-background-color: #f9f9f9;
   --conversation-bg-color: #ffffff;
-  --body-text-color: #2a2a2b;
+  --body-text-color: #111111;
   --body-subtle-color: #747474;
   --body-accent-color: #1072b4;
   --hover-color: #a64544;
@@ -268,7 +268,7 @@ footer {
   margin: auto;
   display: flex;
   justify-content: center;
-  max-width: 800px;
+  max-width: var(--width-max);
 }
 
 footer div {
@@ -458,6 +458,11 @@ div.archive_categories p a:hover {
 }
 
 /** Form fields */
+form {
+  display: flex;
+    flex-direction: column;
+}
+
 input[id='input_search'],
 input[type='email'],
 input[type='text'],
@@ -465,10 +470,9 @@ textarea[name='message'] {
   padding: 10px;
   border: 1px solid var(--divider-color);
   border-radius: 10px;
-  width: 82%;
+  max-width: 80%;
   margin-bottom: 20px;
   margin-right: 10px;
-  height: 25px;
   font-size: var(--font-size-normal);
 }
 
