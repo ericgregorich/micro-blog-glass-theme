@@ -7,7 +7,7 @@
   --width-max: 700px;
   --width-min: 310px;
   --width-max-image: 890px;
-  --body-background-color: #ffffff;
+  --body-background-color: #f9f9f9;
   --conversation-bg-color: #ffffff;
   --body-text-color: #111111;
   --body-subtle-color: #747474;
@@ -68,7 +68,7 @@ body {
 }
 
 hr {
-  border-top: var(--divider-color) 2px dotted;
+  border-top: var(--divider-color) 1px dashed;
 }
 
 h1 {
