@@ -327,18 +327,18 @@ div.photos-grid-container {
   text-align: center;
 }
 
-a.post-list-item-title {
-  color: var(--body-accent-color);
-}
-
-a.post-list-item-title,
-a.post-list-item-date {
+div.post-list-item-title {
+  font-size: var(--font-size-large);
   color: var(--body-text-color);
 }
 
-a.post-list-item-title:hover,
-a.post-list-item-date:hover {
+div.post-list-item-title a:hover {
   color: var(--hover-color);
+}
+
+div.post-list-item-date {
+  color: var(--body-subtle-color);
+  font-size: var(--font-size-normal)
 }
 
 /** Blockquotes */

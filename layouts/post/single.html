@@ -45,6 +45,7 @@
 	</div>
 	</div>
 </article>
+
 {{ if eq .Type "post"}}
     {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") }}
 <div class="response-options">

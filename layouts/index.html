@@ -1,21 +1,24 @@
-{{ define "main" }}<br><br>
+{{ define "main" }}
 <div class="home h-feed">
   <ul class="post-list">
-    {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" |
-    default 25) }}
+    {{ $posts := where site.Pages "Type" "post" }}
+    {{ $hidden_posts := where $posts "Params.categories" "intersect" (slice "Micro Posts") }}
+    {{ $posts = $posts | symdiff $hidden_posts }}
+    {{ $paginator := .Paginate $posts }}
     {{ range $paginator.Pages }}
     {{ if .Title }}
     <li class="post-list-item">
-      <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta">{{ .Title }}</span></a>
+      <div class="post-list-item-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+      <div class="post-list-item-date">
+        <time class="dt-published"datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006"}}</time>
+      </div>
       <div class="post-list-item-content">
         <p>{{ .Summary | truncate 300 }} <a href="{{ .Permalink }}" class="continue-link">read more</a></p>
       </div>
     </li>
     {{ else }}
     <li class="post-list-item">
-      <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published"
-            datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006"
-            }}</time></span></a>
+      <div class="post-list-item-title"><a href="{{ .Permalink }}"><time class="dt-published" datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</a></div>
       <div class="post-list-item-content">
         {{ .Content }}
       </div>
