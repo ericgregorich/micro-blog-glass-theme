@@ -14,7 +14,8 @@
   --body-accent-color: #1072b4;
   --hover-color: #a64544;
   --divider-color: #d5d7da;
-  --blockquote-border-color: #1072b4;
+  --blockquote-color: #f8eec4;
+  --blockquote-border-color: #d6a32e;
   --gradient-bg: radial-gradient(
     circle,
     rgba(255, 255, 255, 1) 0%,
@@ -31,7 +32,8 @@
   --body-accent-color: #1072b4;
   --hover-color: #a64544;
   --divider-color: #e2e1e1;
-  --blockquote-border-color: #1072b4;
+  --blockquote-color: #f8eec4;
+  --blockquote-border-color: #d6a32e;
   --gradient-bg: radial-gradient(
     circle,
     rgba(255, 255, 255, 1) 0%,
@@ -48,7 +50,8 @@
   --body-accent-color: #3292d1;
   --hover-color: #ffd903;
   --divider-color: #184a6a;
-  --blockquote-border-color: #175077;
+  --blockquote-color: #f8eec4;
+  --blockquote-border-color: #d6a32e;
   --gradient-bg: radial-gradient(
     circle,
     rgba(11, 48, 74, 1) 0%,
@@ -343,43 +346,16 @@ div.post-list-item-date {
 
 /** Blockquotes */
 blockquote {
-  display: block;
-  padding: 15px 55px 15px 55px;
-  margin: 15px 0 15px;
-  position: relative;
-  text-align: justify;
-  border-left: 1px solid var(--blockquote-border-color);
-  border-right: 1px solid var(--blockquote-border-color);
-  border-top: 4px solid var(--blockquote-border-color);
-  border-bottom: 4px solid var(--blockquote-border-color);
-  background: var(--gradient-bg);
+  border-left: 4px solid var(--blockquote-border-color);
+  border-right: 4px solid var(--blockquote-border-color);
+  border-top: 1px solid var(--blockquote-border-color);
+  border-bottom: 1px solid var(--blockquote-border-color);
+  color: var(--blockquote-text);
+  padding: 5px 15px 15px 15px;
+  background-color: var(--blockquote-color);
   border-radius: 5px;
   margin-left: 0px;
   margin-right: 0px;
-}
-
-blockquote::before {
-  content: '\201C';
-  font-family: Georgia, serif;
-  font-size: 60px;
-  font-style: italic;
-  font-weight: bold;
-  color: var(--blockquote-border-color);
-  position: absolute;
-  left: 10px;
-  top: 5px;
-}
-
-blockquote::after {
-  content: '\201D';
-  font-family: Georgia, serif;
-  font-size: 60px;
-  font-style: italic;
-  font-weight: bold;
-  color: var(--blockquote-border-color);
-  position: absolute;
-  right: 10px;
-  bottom: -30px;
 }
 
 /** Response Options */
