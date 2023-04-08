@@ -21,9 +21,10 @@
 <div class="pagination">
   {{ if .IsHome }}
   {{ if .Site.Params.paginate_home }}
-  {{ partial "pagination" . }}
+    {{ partial "pagination" . }}
   {{ end }}
   {{ else if .Site.Params.paginate_categories }}
-  {{ partial "pagination" . }}
+    {{ partial "pagination" . }}
   {{ end }}
 </div>
+{{ end }}
