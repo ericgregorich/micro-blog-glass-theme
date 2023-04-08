@@ -327,7 +327,7 @@ div.photos-grid-container {
   text-align: center;
 }
 
-div.post-list-item-title {
+div.post-list-item-title a {
   font-size: var(--font-size-large);
   color: var(--body-text-color);
 }
@@ -338,7 +338,7 @@ div.post-list-item-title a:hover {
 
 div.post-list-item-date {
   color: var(--body-subtle-color);
-  font-size: var(--font-size-normal)
+  font-size: var(--font-size-normal);
 }
 
 /** Blockquotes */
