@@ -6,6 +6,7 @@
     {{ $posts = $posts | symdiff $hidden_posts }}
     {{ $paginator := .Paginate $posts }}
     {{ range $paginator.Pages }}
+    {{ if .Title }}
     <li class="post-list-item">
       <div class="post-list-item-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
       <div class="post-list-item-date">
@@ -15,15 +16,25 @@
         <p>{{ .Summary | truncate 300 }} <a href="{{ .Permalink }}" class="continue-link">read more</a></p>
       </div>
     </li>
+    {{ else }}
+    <li class="post-list-item">
+      <div class="post-list-item-title"><a href="{{ .Permalink }}"><time class="dt-published" datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</a></div>
+      <div class="post-list-item-content">
+        {{ .Content }}
+      </div>
+    </li>
+    {{ end }}
+    {{ end }}
   </ul>
+
 </div>
 <div class="pagination">
   {{ if .IsHome }}
   {{ if .Site.Params.paginate_home }}
-    {{ partial "pagination" . }}
+  {{ partial "pagination" . }}
   {{ end }}
   {{ else if .Site.Params.paginate_categories }}
-    {{ partial "pagination" . }}
+  {{ partial "pagination" . }}
   {{ end }}
 </div>
 {{ end }}
