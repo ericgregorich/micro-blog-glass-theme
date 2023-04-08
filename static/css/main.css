@@ -1,6 +1,5 @@
 :root {
-  --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-family: Lora,'Palatino Linotype','Book Antiqua','New York','DejaVu serif',serif;
   --font-size-normal: 1.1rem;
   --font-size-small: 1rem;
   --font-size-large: 1.7rem;
