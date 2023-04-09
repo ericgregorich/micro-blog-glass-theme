@@ -405,6 +405,11 @@ code {
 }
 
 /** Categories */
+
+a.p-category {
+  padding-right: 15px;
+}
+
 div.archive_categories {
   display: flex;
   flex-flow: wrap;
