@@ -384,7 +384,9 @@ a.site-header-title-link {
   color: var(--body-text-color);
   align-self: center;
   text-transform: uppercase;
+  text-decoration: none;
   display: flex;
+  font-weight: 500;
 }
 
 .site-image {
