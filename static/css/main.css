@@ -1,5 +1,6 @@
 :root {
-  --font-family: 'Lora', 'serif';
+  --font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-size-normal: 19px;
   --font-size-small: 16px;
   --font-size-large: 24px;
@@ -61,6 +62,7 @@
 
 /** Basic styling */
 body {
+  font-family: var(--font-family);
   font-size: var(--font-size-normal);
   font-weight: normal;
   color: var(--body-text-color);
