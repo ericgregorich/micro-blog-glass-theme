@@ -1,8 +1,8 @@
 :root {
-  --font-family: 'Lora', 'serif'
-  --font-size-normal: 1.1rem;
-  --font-size-small: 1rem;
-  --font-size-large: 1.7rem;
+  --font-family: 'Lora', 'serif';
+  --font-size-normal: 17px;
+  --font-size-small: 16px;
+  --font-size-large: 24px;
   --width-max: 700px;
   --width-min: 310px;
   --width-max-image: 890px;
