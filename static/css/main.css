@@ -130,13 +130,11 @@ img {
 a,
 a:visited {
   color: var(--body-accent-color);
-  text-decoration: none;
 }
 
 a:hover,
 a.site-header-title-link:hover {
   color: var(--hover-color);
-  text-decoration: none;
 }
 
 /** Site Header */
