@@ -67,7 +67,7 @@ body {
   font-weight: normal;
   color: var(--body-text-color);
   line-height: 1.7;
-  margin: 0px 10px 10px 10px;
+  margin: 0px 20px 20px 20px;
   background-color: var(--body-background-color);
   -webkit-font-smoothing: antialiased;
 }
