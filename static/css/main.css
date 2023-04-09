@@ -1,6 +1,6 @@
 :root {
-  --font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-size-normal: 18px;
   --font-size-small: 16px;
   --font-size-large: 24px;
@@ -12,17 +12,16 @@
   --body-text-color: #111111;
   --body-subtle-color: #747474;
   --body-accent-color: #0061c8;
-  --hover-color: #C77E00;
+  --hover-color: #c77e00;
   --divider-color: #d5d7da;
   --blockquote-color: #f8eec4;
   --blockquote-border-color: #d6a32e;
   --gradient-bg: radial-gradient(
     circle,
     rgba(255, 255, 255, 1) 0%,
-    rgb(238 238 238) 50%,
-    rgba(249, 249, 249, 1) 100%
+    rgba(227, 233, 238, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
   );
-
 }
 
 [data-theme='light'] {
@@ -31,15 +30,15 @@
   --body-text-color: #2a2a2b;
   --body-subtle-color: #747474;
   --body-accent-color: #0061c8;
-  --hover-color: #C77E00;
+  --hover-color: #c77e00;
   --divider-color: #e2e1e1;
   --blockquote-color: #f8eec4;
   --blockquote-border-color: #d6a32e;
   --gradient-bg: radial-gradient(
     circle,
     rgba(255, 255, 255, 1) 0%,
-    rgb(238 238 238) 50%,
-    rgba(249, 249, 249, 1) 100%
+    rgba(227, 233, 238, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
   );
 }
 
