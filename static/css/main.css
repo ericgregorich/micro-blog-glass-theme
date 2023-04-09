@@ -1,6 +1,6 @@
 :root {
   --font-family: 'Lora', 'serif';
-  --font-size-normal: 18px;
+  --font-size-normal: 19px;
   --font-size-small: 16px;
   --font-size-large: 24px;
   --width-max: 700px;
@@ -61,8 +61,8 @@
 
 /** Basic styling */
 body {
-  font-family: var(--font-family);
   font-size: var(--font-size-normal);
+  font-weight: normal;
   color: var(--body-text-color);
   line-height: 1.7;
   margin: 0px 10px 10px 10px;
