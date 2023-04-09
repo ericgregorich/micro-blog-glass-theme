@@ -1,6 +1,5 @@
 :root {
-  --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-family: 'Lora', 'serif'
   --font-size-normal: 1.1rem;
   --font-size-small: 1rem;
   --font-size-large: 1.7rem;
@@ -19,7 +18,7 @@
   --gradient-bg: radial-gradient(
     circle,
     rgba(255, 255, 255, 1) 0%,
-    rgba(230, 234, 237, 1) 50%,
+    rgb(238 238 238) 50%,
     rgba(249, 249, 249, 1) 100%
   );
 }
@@ -37,7 +36,7 @@
   --gradient-bg: radial-gradient(
     circle,
     rgba(255, 255, 255, 1) 0%,
-    rgba(230, 234, 237, 1) 50%,
+    rgb(238 238 238) 50%,
     rgba(249, 249, 249, 1) 100%
   );
 }
