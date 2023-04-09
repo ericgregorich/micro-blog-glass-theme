@@ -7,11 +7,11 @@
   --width-max: 700px;
   --width-min: 310px;
   --width-max-image: 890px;
-  --body-background-color: #f9f9f9;
+  --body-background-color: #ffffff;
   --conversation-bg-color: #ffffff;
   --body-text-color: #111111;
   --body-subtle-color: #747474;
-  --body-accent-color: #1072b4;
+  --body-accent-color: #db7965;
   --hover-color: #a64544;
   --divider-color: #d5d7da;
   --blockquote-color: #f8eec4;
@@ -29,7 +29,7 @@
   --conversation-bg-color: #ffffff;
   --body-text-color: #2a2a2b;
   --body-subtle-color: #747474;
-  --body-accent-color: #1072b4;
+  --body-accent-color: #db7965;
   --hover-color: #a64544;
   --divider-color: #e2e1e1;
   --blockquote-color: #f8eec4;
@@ -50,7 +50,7 @@
   --body-accent-color: #3292d1;
   --hover-color: #ffd903;
   --divider-color: #184a6a;
-  --blockquote-color: #f8eec4;
+  --blockquote-color: #524d37;
   --blockquote-border-color: #d6a32e;
   --gradient-bg: radial-gradient(
     circle,
@@ -94,9 +94,7 @@ h3 {
 .archive_categories,
 .post-list-title {
   background: var(--gradient-bg);
-  border-top: 1px solid var(--divider-color);
-  border-bottom: 1px solid var(--divider-color);
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 .post-header .post-meta {
