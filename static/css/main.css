@@ -11,8 +11,8 @@
   --conversation-bg-color: #ffffff;
   --body-text-color: #111111;
   --body-subtle-color: #747474;
-  --body-accent-color: #db7965;
-  --hover-color: #a64544;
+  --body-accent-color: #485B99;
+  --hover-color: #4D3D15;
   --divider-color: #d5d7da;
   --blockquote-color: #f8eec4;
   --blockquote-border-color: #d6a32e;
@@ -30,7 +30,7 @@
   --conversation-bg-color: #ffffff;
   --body-text-color: #2a2a2b;
   --body-subtle-color: #747474;
-  --body-accent-color: #db7965;
+  --body-accent-color: #485B99;
   --hover-color: #a64544;
   --divider-color: #e2e1e1;
   --blockquote-color: #f8eec4;
@@ -142,7 +142,7 @@ a.site-header-title-link:hover {
 /** Site Header */
 .site-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: inherit;
   opacity: 1;
   background-color: var(--body-background-color);
@@ -329,6 +329,7 @@ div.photos-grid-container {
 
 .post-header {
   text-align: center;
+  padding: 20px;
 }
 
 div.post-list-item-title a {
