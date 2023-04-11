@@ -2,7 +2,7 @@
   --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-size-normal: 18px;
-  --font-size-small: 16px;
+  --font-size-small: 15px;
   --font-size-large: 24px;
   --width-max: 700px;
   --width-min: 310px;
@@ -369,9 +369,11 @@ blockquote {
   color: var(--body-text-color);
   font-size: var(--font-size-small);
   margin: 5px;
-  background-color: var(--conversation-bg-color);
   padding: 6px;
   border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid var(--divider-color);
+  white-space: nowrap;
 }
 
 .response-options a:hover {
