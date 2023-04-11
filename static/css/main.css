@@ -76,6 +76,10 @@ hr {
   border-top: var(--divider-color) 1px dashed;
 }
 
+.post-title {
+  margin: 0px;
+}
+
 .wrapper {
   margin-top: 25px;
 }
