@@ -78,14 +78,17 @@ hr {
 
 h1 {
   font-size: 2rem;
+  color: var(--body-subtle-color);
 }
 
 h2 {
   font-size: 1.6rem;
+  color: var(--body-subtle-color);
 }
 
 h3 {
   font-size: 1.2rem;
+  color: var(--body-subtle-color);
 }
 
 .post-list-title {
