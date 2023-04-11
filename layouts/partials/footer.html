@@ -1,7 +1,22 @@
 <footer>
   <div class="site-footer-content">
     <div class="footer-col footer-col-3">
-      <div class="site-footer-text">{{ partial "custom_footer.html" . }}</div>
+      <div class="site-footer-text">
+        <nav>
+          <div class="nav-container">
+              {{ range .Site.Menus.main }} {{ if .Page.Params.redirect }}
+                <a class="site-nav-link" href="{{ .Page.Params.redirect }}"
+                  >{{ .Name }}</a
+                >
+              {{ else }}
+                <a class="site-nav-link" href="{{ .URL | relLangURL | safeURL }}"
+                  >{{ .Name }}</a
+                >
+              {{ end }} {{ end }}
+      
+          </div>
+        </nav>
+        {{ partial "custom_footer.html" . }}</div>
     </div>
   </div>
 </footer>
