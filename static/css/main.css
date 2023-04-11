@@ -159,6 +159,7 @@ nav {
 
 .nav-container {
   justify-content: space-evenly;
+  font-size: var(--font-size-small);
 }
 
 /** Site Footer */
