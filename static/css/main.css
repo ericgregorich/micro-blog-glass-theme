@@ -371,7 +371,7 @@ blockquote {
   justify-content: center;
 }
 
-.response-options a, a.continue-link {
+.response-options a {
   color: var(--body-text-color);
   font-size: var(--font-size-small);
   background-color: var(--blockquote-color);
@@ -411,6 +411,7 @@ a.site-header-title-link {
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
+  margin-bottom: 4px;
 }
 
 .right {
