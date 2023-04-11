@@ -87,6 +87,7 @@ hr {
 h1 {
   font-size: 2rem;
   color: var(--body-subtle-color);
+  margin: 0;
 }
 
 h2 {
