@@ -143,7 +143,7 @@ a.site-header-title-link:hover {
 /** Site Header */
 .site-header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   position: inherit;
   opacity: 1;
   background-color: var(--body-background-color);
@@ -151,6 +151,10 @@ a.site-header-title-link:hover {
   min-width: var(--width-min);
   margin: auto;
   padding: 10px 0px 10px 0px;
+}
+
+nav {
+  text-transform: lowercase;
 }
 
 /** Site Footer */
