@@ -2,7 +2,7 @@
 <div class="theme-switch-wrapper">
   🌞&nbsp;
   <label class="theme-switch" for="checkbox">
-    <input type="checkbox" id="checkbox">
+    <input type="checkbox" id="checkbox" />
     <span class="slider round"></span>
   </label>
   &nbsp;🌛
@@ -47,20 +47,15 @@
 {{ end }}
 <header>
   <div class="site-header">
-  <a class="site-header-title-link" href="/">{{ .Site.Title }}</a>
+    <a class="site-header-title-link" href="/">{{ .Site.Title }}</a>
   </div>
   <nav>
-    <div class="nav-container">
-        {{ range .Site.Menus.main }} {{ if .Page.Params.redirect }}
-          <a class="site-nav-link" href="{{ .Page.Params.redirect }}"
-            >{{ .Name }}</a
-          > . 
-        {{ else }}
-          <a class="site-nav-link" href="{{ .URL | relLangURL | safeURL }}"
-            >{{ .Name }}</a
-          > . 
-        {{ end }} {{ end }}
-
-    </div>
+    {{ range .Site.Menus.main }} {{ if .Page.Params.redirect }}
+    <a class="site-nav-link" href="{{ .Page.Params.redirect }}">{{ .Name }}</a>
+    . {{ else }}
+    <a class="site-nav-link" href="{{ .URL | relLangURL | safeURL }}"
+      >{{ .Name }}</a
+    >
+    . {{ end }} {{ end }}
   </nav>
 </header>

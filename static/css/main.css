@@ -143,24 +143,20 @@ a.site-header-title-link:hover {
 /** Site Header */
 .site-header {
   display: flex;
-  justify-content: space-between;
-  position: inherit;
-  opacity: 1;
-  background-color: var(--body-background-color);
+  justify-content: center;
   max-width: var(--width-max);
   min-width: var(--width-min);
   margin: auto;
-  padding: 10px 0px 10px 0px;
+  padding: 20px 0px 10px 0px;
 }
 
 nav {
   text-transform: lowercase;
-}
-
-.nav-container {
+  margin: auto;
+  display: flex;
+  max-width: var(--width-max);
   justify-content: space-evenly;
   font-size: var(--font-size-small);
-  text-align: justify;
 }
 
 /** Site Footer */
