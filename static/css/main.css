@@ -1,7 +1,7 @@
 :root {
   --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  --font-size-normal: 18px;
+  --font-size-normal: 17px;
   --font-size-small: 15px;
   --font-size-large: 24px;
   --width-max: 700px;
@@ -13,7 +13,7 @@
   --body-subtle-color: #184a6a;
   --body-accent-color: #0071b7;
   --hover-color: #c74a00;
-  --divider-color: #bac8d8;
+  --divider-color: #dbe1e9;
   --blockquote-color: #f8eec4;
   --blockquote-border-color: #d6a32e;
   --gradient-bg: radial-gradient(
@@ -31,7 +31,7 @@
   --body-subtle-color: #184a6a;
   --body-accent-color: #0071b7;
   --hover-color: #c74a00;
-  --divider-color: #bac8d8;
+  --divider-color: #dbe1e9;
   --blockquote-color: #f8eec4;
   --blockquote-border-color: #d6a32e;
   --gradient-bg: radial-gradient(
@@ -333,6 +333,7 @@ div.photos-grid-container {
 .post-header {
   text-align: center;
   padding: 20px;
+  border: 1px solid var(--divider-color);
 }
 
 div.post-list-item-title a {
