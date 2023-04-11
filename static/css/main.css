@@ -140,6 +140,11 @@ a.site-header-title-link:hover {
   color: var(--hover-color);
 }
 
+/** Active */
+.active {
+  font-weight: 600;
+}
+
 /** Site Header */
 .site-header {
   display: flex;
