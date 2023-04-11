@@ -11,7 +11,7 @@
   --conversation-bg-color: #ffffff;
   --body-text-color: #111111;
   --body-subtle-color: #184a6a;
-  --body-accent-color: #167cbd;
+  --body-accent-color: #0071b7;
   --hover-color: #c74a00;
   --divider-color: #d5d7da;
   --blockquote-color: #f8eec4;
@@ -29,7 +29,7 @@
   --conversation-bg-color: #ffffff;
   --body-text-color: #2a2a2b;
   --body-subtle-color: #184a6a;
-  --body-accent-color: #167cbd;
+  --body-accent-color: #0071b7;
   --hover-color: #c74a00;
   --divider-color: #e2e1e1;
   --blockquote-color: #f8eec4;
@@ -335,7 +335,7 @@ div.photos-grid-container {
 
 div.post-list-item-title a {
   font-size: var(--font-size-large);
-  color: var(--body-subtle-color);
+  color: var(--body-accent-color);
   font-weight: 600;
   letter-spacing: 0.05em;
 }
