@@ -171,6 +171,11 @@ nav {
   max-width: var(--width-max);
   justify-content: space-evenly;
   font-size: var(--font-size-small);
+  white-space: nowrap;
+}
+
+nav a {
+  margin: 5px;
 }
 
 /** Site Footer */
