@@ -335,7 +335,7 @@ div.photos-grid-container {
 
 div.post-list-item-title a {
   font-size: var(--font-size-large);
-  color: var(--body-text-color);
+  color: var(--body-subtle-color);
   font-weight: 600;
   letter-spacing: 0.05em;
 }
