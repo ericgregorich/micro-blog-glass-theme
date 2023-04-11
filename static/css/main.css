@@ -371,7 +371,7 @@ blockquote {
   justify-content: center;
 }
 
-.response-options a {
+.response-options a a.continue-link {
   color: var(--body-text-color);
   font-size: var(--font-size-small);
   background-color: var(--blockquote-color);
