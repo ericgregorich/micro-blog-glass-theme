@@ -52,10 +52,10 @@
   <nav>
     {{ range .Site.Menus.main }} {{ if .Page.Params.redirect }}
     <a class="site-nav-link" href="{{ .Page.Params.redirect }}">{{ .Name }}</a>
-    . {{ else }}
+    {{ else }}
     <a class="site-nav-link" href="{{ .URL | relLangURL | safeURL }}"
       >{{ .Name }}</a
     >
-    . {{ end }} {{ end }}
+    {{ end }} {{ end }}
   </nav>
 </header>
