@@ -237,6 +237,7 @@ div.post-list-item-title a {
   color: var(--body-accent-color);
   font-weight: 600;
   letter-spacing: 0.05em;
+  margin: 0;
 }
 
 div.post-list-item-title a:hover {
