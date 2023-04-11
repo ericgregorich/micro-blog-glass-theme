@@ -14,14 +14,15 @@
         </div>
         <div class="post-list-item-content">
           <p>{{ .Summary | truncate 300 }}<br>
-          <a href="{{ .Permalink }}" class="continue-link">read more</a></p> 
+          <a href="{{ .Permalink }}" class="continue-link">Continue reading >>></a></p> 
         </div>
       </li>
     {{ else }}
       <li class="post-list-item">
         <div class="post-list-item-title"><a href="{{ .Permalink }}"><time class="dt-published" datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</a></div>
         <div class="post-list-item-content">
-          {{ .Content }}
+          {{ .Content }}<br>
+          <a href="{{ .Permalink }}" class="continue-link">Continue to the conversation >>></a></p> 
         </div>
       </li>
     {{ end }}
