@@ -169,9 +169,10 @@ nav {
   margin: auto;
   display: flex;
   max-width: var(--width-max);
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: var(--font-size-small);
   white-space: nowrap;
+  flex-wrap: wrap;
 }
 
 nav a {
