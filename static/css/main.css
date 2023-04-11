@@ -320,7 +320,8 @@ p.h-entry,
 div.photos-grid-container {
   list-style: none;
   border-bottom: 1px dotted var(--divider-color);
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .post-list img {
