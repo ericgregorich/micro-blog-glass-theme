@@ -9,7 +9,8 @@
 		{{ range $paginator.Pages }}
 		{{ if .Title }}
       <li class="post-list-item">
-        <div class="post-list-item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>
+        <div class="post-list-item-title">
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
           <a href="{{ .Permalink }}" class="continue-link"><i class="arrow right"></i></a>
         </div>
         <div class="post-list-item-date">
@@ -21,7 +22,8 @@
       </li>
     {{ else }}
       <li class="post-list-item">
-        <div class="post-list-item-title"><a href="{{ .Permalink }}"><time class="dt-published" datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</a>
+        <div class="post-list-item-title">
+          <a href="{{ .Permalink }}"><time class="dt-published" datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</a>
           <a href="{{ .Permalink }}" class="continue-link"><i class="arrow right"></i></a>
         </div>
         <div class="post-list-item-content">
