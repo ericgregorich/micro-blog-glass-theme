@@ -232,12 +232,15 @@ div.photos-grid-container {
   border: 1px solid var(--divider-color);
 }
 
+div.post-list-item-title {
+  margin: 0px;
+}
+
 div.post-list-item-title a {
   font-size: var(--font-size-large);
   color: var(--body-accent-color);
   font-weight: 600;
   letter-spacing: 0.05em;
-  margin: 0;
 }
 
 div.post-list-item-title a:hover {
