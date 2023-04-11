@@ -368,12 +368,14 @@ blockquote {
 .response-options a {
   color: var(--body-text-color);
   font-size: var(--font-size-small);
+  background-color: var(--blockquote-color);
   margin: 5px;
   padding: 6px;
   border-radius: 8px;
   text-decoration: none;
-  border: 1px solid var(--divider-color);
+  border: 1px solid var(--blockquote-border-color);
   white-space: nowrap;
+  text-transform: lowercase;
 }
 
 .response-options a:hover {
