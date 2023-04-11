@@ -320,6 +320,10 @@ a.site-header-title-link {
   margin-bottom: 4px;
 }
 
+.arrow:hover {
+  border: solid var(--hover-color);
+}
+
 .right {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
