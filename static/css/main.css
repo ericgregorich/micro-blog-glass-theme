@@ -372,7 +372,7 @@ form {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 680px;
+  width: 95%;
 }
 
 input[id='input_search'],
@@ -385,7 +385,7 @@ textarea[name='message'] {
   margin-bottom: 20px;
   margin-right: 10px;
   font-size: var(--font-size-normal);
-  max-width: 680px;
+  width: 95%;
 }
 
 form textarea {
