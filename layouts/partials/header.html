@@ -48,6 +48,7 @@
 <header>
   <div class="site-header">
   <a class="site-header-title-link" href="/">{{ .Site.Title }}</a>
+  </div>
   <nav>
     <div class="nav-container">
         {{ range .Site.Menus.main }} {{ if .Page.Params.redirect }}
@@ -62,5 +63,4 @@
 
     </div>
   </nav>
-</div>
 </header>

@@ -160,6 +160,7 @@ nav {
 .nav-container {
   justify-content: space-evenly;
   font-size: var(--font-size-small);
+  text-align: justify;
 }
 
 /** Site Footer */
@@ -168,10 +169,6 @@ footer {
   display: flex;
   justify-content: center;
   max-width: var(--width-max);
-}
-
-footer div {
-  line-height: 50px;
 }
 
 .site-footer {
