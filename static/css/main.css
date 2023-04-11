@@ -319,7 +319,8 @@ li.h-entry,
 p.h-entry,
 div.photos-grid-container {
   list-style: none;
-  padding-bottom: 50px;
+  border-bottom: 1px dotted var(--divider-color);
+  margin-bottom: 50px;
 }
 
 .post-list img {
