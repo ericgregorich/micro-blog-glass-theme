@@ -157,6 +157,10 @@ nav {
   text-transform: lowercase;
 }
 
+.nav-container {
+  justify-content: space-evenly;
+}
+
 /** Site Footer */
 footer {
   margin: auto;
