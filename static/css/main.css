@@ -414,8 +414,8 @@ a.site-header-title-link {
 }
 
 .right {
-  transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 /** Code */
