@@ -385,7 +385,7 @@ textarea[name='message'] {
   margin-bottom: 20px;
   margin-right: 10px;
   font-size: var(--font-size-normal);
-  width: 95%;
+  width: 100%;
 }
 
 form textarea {
