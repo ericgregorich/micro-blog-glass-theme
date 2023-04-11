@@ -376,6 +376,7 @@ blockquote {
   border: 1px solid var(--blockquote-border-color);
   white-space: nowrap;
   text-transform: lowercase;
+  box-shadow: 5px 5px 8px 0px #eeeeee;
 }
 
 .response-options a:hover {
