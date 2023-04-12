@@ -2,7 +2,7 @@
 <div class="home h-feed">
   <ul class="post-list">
     {{ $posts := where site.Pages "Type" "post" }}
-    {{ $hidden_posts := where $posts "Params.categories" "intersect" (slice "Micro Posts") }}
+    {{ $hidden_posts := where $posts "Params.categories" "intersect" (slice "Notes") }}
     {{ $posts = $posts | symdiff $hidden_posts }}
     {{ $paginator := .Paginate $posts }}
     {{ range $paginator.Pages }}
